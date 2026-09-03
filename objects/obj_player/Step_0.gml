@@ -6,6 +6,7 @@ down_input = keyboard_check(ord("S"));
 var hinput = right_input - left_input;
 var vinput = down_input - up_input;
 
+if(currently_talking == noone){
 if(up_input){
 	facing_direction = 1
 } else if(down_input){
@@ -49,7 +50,6 @@ if (vinput != 0 || hinput != 0){
 	}
 }
 
-if(currently_talking == noone) {
 move_and_collide(hinput, vinput, obj_wall);
 }
 

@@ -21,7 +21,7 @@ if (currently_talking != noone){
 	
 //	draw_set_colour(c_white);
 //	draw_rectangle(x1,y1,x2,y2,false);
-	draw_sprite(current_portrait, 0, 0 + delta_x, y1)
+	draw_sprite(current_portrait, 0, 0 + delta_x, y1 + sprite_get_height(current_portrait)/2)
 	var text_x = x1 + 32;
 	var text_y = y1+32;
 	
