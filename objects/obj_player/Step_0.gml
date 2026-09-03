@@ -8,10 +8,10 @@ var vinput = down_input - up_input;
 
 if(up_input){
 	facing_direction = 1
-} else if(right_input){
-	facing_direction = 4
 } else if(down_input){
 	facing_direction = 2
+} else if(right_input){
+	facing_direction = 4
 } else if(left_input) {
 	facing_direction = 3
 }
@@ -48,4 +48,28 @@ if (vinput != 0 || hinput != 0){
 			break;
 	}
 }
+
+if(currently_talking == noone) {
 move_and_collide(hinput, vinput, obj_wall);
+}
+
+if (keyboard_check_pressed(ord("E"))) {
+	var npc_colliding = instance_place(x,y, obj_npc);
+	
+	if(npc_colliding != noone && currently_talking == noone){
+		current_text = npc_colliding.interaction_text;
+		current_portrait = npc_colliding.portrait;
+		currently_talking = npc_colliding;
+	} else if (currently_talking != noone){
+		if (current_text_line + 1 != array_length(current_text)){
+			current_text_line++;
+					current_text_index = 0;
+		} else{
+		currently_talking = noone;
+		current_text = "";
+		current_text_line = 0;
+		current_text_index = 0;
+		current_portrait = noone;
+		}
+	}
+}
