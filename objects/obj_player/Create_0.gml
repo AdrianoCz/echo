@@ -5,3 +5,4 @@ currently_talking = noone;
 current_text_index = 0;
 current_text_line = 0;
 current_portrait = noone;
+current_npc_name = "";

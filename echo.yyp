@@ -10,6 +10,7 @@
   },
   "defaultScriptType":1,
   "Folders":[
+    {"$GMFolder":"","%Name":"fonts","folderPath":"folders/fonts.yy","name":"fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"objects","folderPath":"folders/objects.yy","name":"objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"room_transition","folderPath":"folders/objects/room_transition.yy","name":"room_transition","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"rooms","folderPath":"folders/rooms.yy","name":"rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -30,6 +31,8 @@
   },
   "name":"echo",
   "resources":[
+    {"id":{"name":"font_npc_name","path":"fonts/font_npc_name/font_npc_name.yy",},},
+    {"id":{"name":"font_regular_interaction","path":"fonts/font_regular_interaction/font_regular_interaction.yy",},},
     {"id":{"name":"obj_entrance","path":"objects/obj_entrance/obj_entrance.yy",},},
     {"id":{"name":"obj_exit","path":"objects/obj_exit/obj_exit.yy",},},
     {"id":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},},

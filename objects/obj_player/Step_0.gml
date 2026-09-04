@@ -60,6 +60,7 @@ if (keyboard_check_pressed(ord("E"))) {
 		current_text = npc_colliding.interaction_text;
 		current_portrait = npc_colliding.portrait;
 		currently_talking = npc_colliding;
+		current_npc_name = npc_colliding.character_name;
 	} else if (currently_talking != noone){
 		if (current_text_line + 1 != array_length(current_text)){
 			current_text_line++;
@@ -70,6 +71,7 @@ if (keyboard_check_pressed(ord("E"))) {
 		current_text_line = 0;
 		current_text_index = 0;
 		current_portrait = noone;
+		current_npc_name = "";
 		}
 	}
 }
