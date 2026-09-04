@@ -62,14 +62,15 @@ if (keyboard_check_pressed(ord("E"))) {
 		currently_talking = npc_colliding;
 		current_npc_name = npc_colliding.character_name;
 	} else if (currently_talking != noone){
-		if (current_text_line + 1 != array_length(current_text)){
+		if (current_text_index <= string_length(current_text[current_text_line])) {
+		current_text_index = string_length(current_text[current_text_line]) 
+
+		} else if (current_text_line + 1 != array_length(current_text)){
 			current_text_line++;
-					current_text_index = 0;
-		} else{
+		} else if (current_text_index != string_length(current_text[current_text_line]) && current_text_line + 1 == array_length(current_text) ){
 		currently_talking = noone;
 		current_text = "";
 		current_text_line = 0;
-		current_text_index = 0;
 		current_portrait = noone;
 		current_npc_name = "";
 		}
