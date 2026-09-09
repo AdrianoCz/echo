@@ -27,6 +27,7 @@
     {"$GMObjectProperty":"v2","%Name":"interaction_text","filters":[],"listItems":[],"multiselect":false,"name":"interaction_text","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"[]","varType":4,},
     {"$GMObjectProperty":"v2","%Name":"portrait","filters":[],"listItems":[],"multiselect":false,"name":"portrait","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
     {"$GMObjectProperty":"v2","%Name":"character_name","filters":[],"listItems":[],"multiselect":false,"name":"character_name","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":2,},
+    {"$GMObjectProperty":"v2","%Name":"has_interacted","filters":[],"listItems":[],"multiselect":false,"name":"has_interacted","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

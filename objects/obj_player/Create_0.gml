@@ -7,3 +7,5 @@ current_text_line = 0;
 current_portrait = noone;
 current_npc_name = "";
 last_text_line = 0;
+current_choice = 0;
+lasting_choices = [];
