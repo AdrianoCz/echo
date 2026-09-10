@@ -46,8 +46,8 @@ if (currently_talking != noone){
 	}
 	if(current_text[current_text_line][0] == "choice"){
 	
-	for( var i = 1; i < array_length(current_text); i++ ){
-	draw_text_ext(text_x , text_y + 24 * (i-1), current_text[current_text_line][i],16,726);
+	for( var i = 2; i < array_length(current_text[current_text_line]); i++ ){
+	draw_text_ext(text_x , text_y + 24 * (i-2), current_text[current_text_line][i],16,726);
 	}
 	draw_arrow(text_x - 24, text_y + 24 * current_choice + 12, text_x - 12, text_y + 24 * current_choice + 12, 5)
 	}

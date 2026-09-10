@@ -1,0 +1,1 @@
+// choice structure [type, choice_id , options...]
