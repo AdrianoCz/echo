@@ -33,6 +33,8 @@
     {"$GMObjectProperty":"v2","%Name":"character_name","filters":[],"listItems":[],"multiselect":false,"name":"character_name","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":2,},
     {"$GMObjectProperty":"v2","%Name":"has_interacted","filters":[],"listItems":[],"multiselect":false,"name":"has_interacted","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"v2","%Name":"interaction_blocked","filters":[],"listItems":[],"multiselect":false,"name":"interaction_blocked","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"True","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"on_interaction_effect","filters":[],"listItems":[],"multiselect":false,"name":"on_interaction_effect","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"function on_int() {}","varType":4,},
+    {"$GMObjectProperty":"v2","%Name":"has_applied_effect","filters":[],"listItems":[],"multiselect":false,"name":"has_applied_effect","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

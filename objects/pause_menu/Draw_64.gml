@@ -1,39 +1,64 @@
+// 1. Dark semi-transparent background overlay
 draw_set_alpha(0.6);
 draw_set_color(c_black);
 draw_rectangle(0, 0, 1366, 768, false);
-draw_set_alpha(1.0);
+draw_set_alpha(1.0); // Reset alpha
 
+// Common variables
 var cx = 1366 / 2;
 var cy = 768 / 2;
+var bw = 260; // Button width
+var bh = 60;  // Button height
 
-var bw = 260;
-var bh = 60; 
-
-var salvar_x1 = cx - (bw / 2);
-var salvar_y1 = cy - 50;
-var salvar_x2 = cx + (bw / 2);
-var salvar_y2 = salvar_y1 + bh;
-
-var sair_x1 = cx - (bw / 2);
-var sair_y1 = cy + 20;
-var sair_x2 = cx + (bw / 2);
-var sair_y2 = sair_y1 + bh;
-
-draw_set_font(font_main_menu);
-
-draw_set_color(c_dkgray);
-draw_rectangle(salvar_x1, salvar_y1, salvar_x2, salvar_y2, false);
-draw_set_color(c_white);
-draw_rectangle(salvar_x1 - 1, salvar_y1 - 1, salvar_x2 + 1 , salvar_y2 + 1, true);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
-draw_text(cx, salvar_y1 + (bh / 2), "Salvar");
 
-draw_set_color(c_dkgray);
-draw_rectangle(sair_x1, sair_y1, sair_x2, sair_y2, false);
-draw_set_color(c_white);
-draw_rectangle(sair_x1 - 1, sair_y1 - 1, sair_x2 + 1, sair_y2 + 1, true);
-draw_text(cx, sair_y1 + (bh / 2), "Sair");
+// ==================== STATE 1: MAIN MENU ====================
+if (menu_state == "main") {
+    var salvar_y1 = cy - 50;
+    var sair_y1 = cy + 20;
+    
+    // Draw "Salvar" Button (Black background + White border)
+    draw_set_color(c_black);
+    draw_rectangle(cx - (bw/2), salvar_y1, cx + (bw/2), salvar_y1 + bh, false);
+    draw_set_color(c_white);
+    draw_rectangle(cx - (bw/2), salvar_y1, cx + (bw/2), salvar_y1 + bh, true);
+    draw_text(cx, salvar_y1 + (bh/2), "Salvar");
 
+    // Draw "Sair" Button (Black background + White border)
+    draw_set_color(c_black);
+    draw_rectangle(cx - (bw/2), sair_y1, cx + (bw/2), sair_y1 + bh, false);
+    draw_set_color(c_white);
+    draw_rectangle(cx - (bw/2), sair_y1, cx + (bw/2), sair_y1 + bh, true);
+    draw_text(cx, sair_y1 + (bh/2), "Sair");
+}
+
+// ==================== STATE 2: SAVE SLOTS ====================
+else if (menu_state == "save_slots") {
+    var slot_h = 50;
+    var gap = 15;
+    var start_y = cy - 120;
+    
+    // Draw 3 Save Slots (Black background + White border)
+    for (var i = 1; i <= 3; i++) {
+        var sy = start_y + (i - 1) * (slot_h + gap);
+        
+        draw_set_color(c_black);
+        draw_rectangle(cx - (bw/2), sy, cx + (bw/2), sy + slot_h, false);
+        draw_set_color(c_white);
+        draw_rectangle(cx - (bw/2), sy, cx + (bw/2), sy + slot_h, true);
+        draw_text(cx, sy + (slot_h/2), "Slot " + string(i));
+    }
+    
+    // Draw "Voltar" (Back) Button at the bottom (Black background + White border)
+    var back_y = start_y + 3 * (slot_h + gap);
+    draw_set_color(c_black);
+    draw_rectangle(cx - (bw/2), back_y, cx + (bw/2), back_y + slot_h, false);
+    draw_set_color(c_white);
+    draw_rectangle(cx - (bw/2), back_y, cx + (bw/2), back_y + slot_h, true);
+    draw_text(cx, back_y + (slot_h/2), "Voltar");
+}
+
+// Always reset text alignments!
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
