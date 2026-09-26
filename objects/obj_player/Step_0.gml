@@ -1,3 +1,7 @@
+if(object_exists(decision_manager)){
+lasting_choices = decision_manager.lasting_choices;
+}
+
 left_input = keyboard_check(ord("A"));
 right_input = keyboard_check(ord("D"));
 up_input = keyboard_check(ord("W"));
@@ -10,7 +14,15 @@ function get_character_choice_index(_value, _index){
 	return(_value[0] == current_npc_name)
 }
 
-if(currently_talking == noone){
+if (keyboard_check(vk_shift)){
+	my_velocty = 2;
+	image_speed = 1.5;
+} else {
+	my_velocty = 1.5;
+	image_speed = 0.85;
+}
+
+if(currently_talking == noone && !is_paused){
 if(up_input){
 	facing_direction = 1
 } else if(down_input){
@@ -21,7 +33,12 @@ if(up_input){
 	facing_direction = 3
 }
 
+
 if (vinput == 0 && hinput == 0){
+	
+	image_xscale = 0.5;
+	image_yscale = 0.5;
+	
 	switch (facing_direction){
 		case 1:
 			sprite_index = spr_idle_up;
@@ -39,7 +56,11 @@ if (vinput == 0 && hinput == 0){
 			sprite_index = spr_idle_down;
 	}
 }
+
 if (vinput != 0 || hinput != 0){
+		image_xscale = 1;
+	image_yscale = 1;
+	
 		switch (facing_direction){
 		case 1:
 			sprite_index = spr_walk_up;
@@ -56,7 +77,7 @@ if (vinput != 0 || hinput != 0){
 	}
 }
 
-move_and_collide(hinput, vinput, obj_wall);
+move_and_collide(hinput * my_velocty, vinput * my_velocty, obj_wall);
 }
 if(currently_talking != noone && current_text[current_text_line][0] == "choice"){
 	if(keyboard_check_pressed(ord("W"))  && current_choice > 0 ){
@@ -89,7 +110,7 @@ if (keyboard_check_pressed(ord("E"))) {
 		current_npc_name = "";
 		}
 	} else if(current_text[current_text_line][0] == "choice"){
-			array_push(lasting_choices,[current_npc_name,current_text[current_text_line][1] ,current_choice ])
+			array_push(decision_manager.lasting_choices,[current_npc_name,current_text[current_text_line][1] ,current_choice ])
 			current_choice = 0;
 			if (current_text_line + 1 != array_length(current_text)){
 			current_text_line++;

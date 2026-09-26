@@ -27,12 +27,15 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"target_room","filters":[],"listItems":[],"multiselect":false,"name":"target_room","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"room_start","path":"rooms/room_start/room_start.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"room_start","varType":5,},
-    {"$GMObjectProperty":"v2","%Name":"target_entrance","filters":[],"listItems":[],"multiselect":false,"name":"target_entrance","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"nooone","varType":4,},
+    {"$GMObjectProperty":"v2","%Name":"target_entrance","filters":[],"listItems":[],"multiselect":false,"name":"target_entrance","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"noone","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_collision_entrance",
+    "path":"sprites/spr_collision_entrance/spr_collision_entrance.yy",
+  },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

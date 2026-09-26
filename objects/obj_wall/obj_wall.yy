@@ -6,8 +6,8 @@
   "name":"obj_wall",
   "overriddenProperties":[],
   "parent":{
-    "name":"objects",
-    "path":"folders/objects.yy",
+    "name":"collision",
+    "path":"folders/objects/collision.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_collision_wall",
+    "path":"sprites/spr_collision_wall/spr_collision_wall.yy",
+  },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

@@ -1,0 +1,1 @@
+on_left_click = game_end

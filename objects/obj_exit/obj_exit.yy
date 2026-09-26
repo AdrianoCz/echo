@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_collision_exit",
+    "path":"sprites/spr_collision_exit/spr_collision_exit.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
