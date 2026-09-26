@@ -56,6 +56,7 @@
     {"id":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
+    {"id":{"name":"object_","path":"objects/object_/object_.yy",},},
     {"id":{"name":"pause_menu","path":"objects/pause_menu/pause_menu.yy",},},
     {"id":{"name":"room_transition_manager","path":"objects/room_transition_manager/room_transition_manager.yy",},},
     {"id":{"name":"main_menu","path":"rooms/main_menu/main_menu.yy",},},

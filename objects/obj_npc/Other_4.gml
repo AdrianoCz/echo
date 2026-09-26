@@ -1,0 +1,1 @@
+check_has_interacted(self.character_id);

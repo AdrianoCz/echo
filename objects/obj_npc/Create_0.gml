@@ -12,3 +12,11 @@ function get_interaction_result(_searched_interaction) {
     
     return _result;
 }
+function check_has_interacted(_player_id){
+	for (i = 0; i < array_length(decision_manager.has_interacted_list); i++){
+		if decision_manager.has_interacted_list[i] == self.character_id {
+			self.has_interacted = true	
+		}
+	
+	}
+}

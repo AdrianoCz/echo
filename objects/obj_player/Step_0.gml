@@ -94,6 +94,7 @@ if (keyboard_check_pressed(ord("E"))) {
 		current_portrait = npc_colliding.portrait;
 		currently_talking = npc_colliding;
 		current_npc_name = npc_colliding.character_name;
+		current_npc_id = npc_colliding.character_id;
 	} else if (currently_talking != noone){
 		if(current_text[current_text_line][0] == "text"){
 		if (current_text_index <= string_length(current_text[current_text_line][1])) {
@@ -103,6 +104,7 @@ if (keyboard_check_pressed(ord("E"))) {
 			current_text_line++;
 		} else if (current_text_index != string_length(current_text[current_text_line]) && current_text_line + 1 == array_length(current_text) ){
 		npc_colliding.has_interacted = true;
+		array_push(decision_manager.has_interacted_list, current_npc_id)
 		currently_talking = noone;
 		current_text = "";
 		current_text_line = 0;
@@ -110,12 +112,13 @@ if (keyboard_check_pressed(ord("E"))) {
 		current_npc_name = "";
 		}
 	} else if(current_text[current_text_line][0] == "choice"){
-			array_push(decision_manager.lasting_choices,[current_npc_name,current_text[current_text_line][1] ,current_choice ])
+			array_push(decision_manager.lasting_choices,[current_npc_id,current_text[current_text_line][1] ,current_choice ])
 			current_choice = 0;
 			if (current_text_line + 1 != array_length(current_text)){
 			current_text_line++;
 			} else if (current_text_index != string_length(current_text[current_text_line]) && current_text_line + 1 == array_length(current_text) ){
 			npc_colliding.has_interacted = true;
+			array_push(decision_manager.has_interacted_list, current_npc_id)
 			currently_talking = noone;
 			current_text = "";
 			current_text_line = 0;
