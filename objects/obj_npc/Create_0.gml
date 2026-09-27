@@ -20,3 +20,11 @@ function check_has_interacted(_player_id){
 	
 	}
 }
+function check_has_applied_effect(_player_id){
+	for (i = 0; i < array_length(decision_manager.applied_effect_list); i++){
+		if decision_manager.applied_effect_list[i] == self.character_id {
+			self.has_applied_effect = true	
+		}
+	
+	}
+}

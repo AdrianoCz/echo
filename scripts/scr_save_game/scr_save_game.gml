@@ -3,7 +3,9 @@ function save_game(index){
     
 	var _de_mg_save = {
 		choices: decision_manager.lasting_choices,
-		interacted: decision_manager.has_interacted_list
+		interacted: decision_manager.has_interacted_list,
+		applied_effect: decision_manager.applied_effect_list,
+		curr_sanity: decision_manager.sanity
 	}
 	
     buffer_write(buffer, buffer_string, json_stringify(_de_mg_save));

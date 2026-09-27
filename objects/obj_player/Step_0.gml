@@ -13,12 +13,13 @@ var vinput = down_input - up_input;
 function get_character_choice_index(_value, _index){
 	return(_value[0] == current_npc_name)
 }
-
+		image_xscale = 1;
+	image_yscale = 1;
 if (keyboard_check(vk_shift)){
 	my_velocty = 2;
 	image_speed = 1.5;
 } else {
-	my_velocty = 1.5;
+	my_velocty = 1;
 	image_speed = 0.85;
 }
 
@@ -35,10 +36,6 @@ if(up_input){
 
 
 if (vinput == 0 && hinput == 0){
-	
-	image_xscale = 0.5;
-	image_yscale = 0.5;
-	
 	switch (facing_direction){
 		case 1:
 			sprite_index = spr_idle_up;
@@ -58,8 +55,7 @@ if (vinput == 0 && hinput == 0){
 }
 
 if (vinput != 0 || hinput != 0){
-		image_xscale = 1;
-	image_yscale = 1;
+
 	
 		switch (facing_direction){
 		case 1:
@@ -105,6 +101,11 @@ if (keyboard_check_pressed(ord("E"))) {
 		} else if (current_text_index != string_length(current_text[current_text_line]) && current_text_line + 1 == array_length(current_text) ){
 		npc_colliding.has_interacted = true;
 		array_push(decision_manager.has_interacted_list, current_npc_id)
+		if(currently_talking.on_interaction_effect != "nofunc"){
+			currently_talking.on_interaction_effect();
+			currently_talking.has_applied_effect = true;
+			array_push(decision_manager.applied_effect_list, current_npc_id);
+		}		
 		currently_talking = noone;
 		current_text = "";
 		current_text_line = 0;
@@ -119,6 +120,11 @@ if (keyboard_check_pressed(ord("E"))) {
 			} else if (current_text_index != string_length(current_text[current_text_line]) && current_text_line + 1 == array_length(current_text) ){
 			npc_colliding.has_interacted = true;
 			array_push(decision_manager.has_interacted_list, current_npc_id)
+			if(currently_talking.on_interaction_effect != "nofunc"){
+				currently_talking.on_interaction_effect();
+				currently_talking.has_applied_effect = true;
+				array_push(decision_manager.applied_effect_list, current_npc_id);
+			}
 			currently_talking = noone;
 			current_text = "";
 			current_text_line = 0;

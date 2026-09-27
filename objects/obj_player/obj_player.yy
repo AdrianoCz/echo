@@ -34,10 +34,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_idle_up",
-    "path":"sprites/spr_idle_up/spr_idle_up.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":{
     "name":"spr_walk_down",
     "path":"sprites/spr_walk_down/spr_walk_down.yy",

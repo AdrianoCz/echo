@@ -3,8 +3,10 @@ function can_talk_validation(){
 	self.interaction_blocked = false;
 	if(get_interaction_result("first_npc_test")[0][2] == 0){
 		self.interaction_text[0][1] = "Pitagorize minha corpa, baricentrize minha genere"
+		self.on_interaction_effect = function a(){change_sanity(5); return "a"}
 	} else if (get_interaction_result("first_npc_test")[0][2] == 1){
 		self.interaction_text[0][1] = "Marolou com meu mano la, slk"
+		self.on_interaction_effect = function b(){change_sanity(-5); return "a"}
 	}
 } 
 }

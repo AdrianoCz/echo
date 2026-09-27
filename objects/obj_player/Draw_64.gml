@@ -22,11 +22,6 @@ if (currently_talking != noone){
 	draw_set_colour(rect[4])
 	draw_rectangle(rect[0], rect[1], rect[2], rect[3], false);
 	}
-//	draw_set_colour(c_black)
-	//draw_rectangle(x1,y1,x2,y1+4,false);
-	
-//	draw_set_colour(c_white);
-//	draw_rectangle(x1,y1,x2,y2,false);
 	draw_sprite_ext(current_portrait, 0, delta_x + 3.75 , y2 - 7 , 1.5, 1.5 ,0,c_white, 1)
 
 	var text_x = x1 + 32;

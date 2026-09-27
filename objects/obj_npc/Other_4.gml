@@ -1,1 +1,2 @@
 check_has_interacted(self.character_id);
+check_has_applied_effect(self.character_id)

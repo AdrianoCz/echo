@@ -13,6 +13,8 @@ function load_game(index){
 		var things = json_parse(buffer_read(buffer, buffer_string))
         decision_manager.lasting_choices = things.choices
         decision_manager.has_interacted_list = things.interacted
+		decision_manager.applied_effect_list = things.applied_effect
+		decision_manager.sanity = things.curr_sanity
 		
         buffer_delete(buffer);
     }); 	
