@@ -94,8 +94,6 @@ if (keyboard_check_pressed(ord("E"))) {
 		
 	} else if (currently_talking != noone){
 		if(current_text[current_text_line][0] == "text"){
-
-			
 			if (current_text_index <= string_length(current_text[current_text_line][1])) {
 				current_text_index = string_length(current_text[current_text_line][1]) 
 				current_portrait = npc_colliding.portrait;

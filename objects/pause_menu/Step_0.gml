@@ -27,18 +27,18 @@ if (mouse_check_button_pressed(mb_left)) {
         var gap = 15;
         var start_y = cy - 120;
         
-        // Check clicks for Slot 1, 2, and 3 using a loop
         for (var i = 1; i <= 3; i++) {
             var sy = start_y + (i - 1) * (slot_h + gap);
             
             if (mx >= cx - (bw/2) && mx <= cx + (bw/2) && my >= sy && my <= sy + slot_h) {
 				save_game(i)
+				menu_state = "main"; 
+				keyboard_key_press(vk_escape)
         }}
         
-        // Check click for "Voltar" (Back) button
         var back_y = start_y + 3 * (slot_h + gap);
         if (mx >= cx - (bw/2) && mx <= cx + (bw/2) && my >= back_y && my <= back_y + slot_h) {
-            menu_state = "main"; // Go back to main pause menu
+            menu_state = "main"; 
         }
     }
 }

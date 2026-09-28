@@ -1,4 +1,5 @@
 can_talk_validation()
+
 if (obj_player.currently_talking == id){
 if (obj_player.current_text[obj_player.current_text_line][0] == "text_amelie"){
 			obj_player.current_npc_name = "AMÉLIE"
