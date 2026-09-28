@@ -13,8 +13,8 @@ var vinput = down_input - up_input;
 function get_character_choice_index(_value, _index){
 	return(_value[0] == current_npc_name)
 }
-		image_xscale = 1;
-	image_yscale = 1;
+		image_xscale = 1.333;
+	image_yscale = 1.333;
 if (keyboard_check(vk_shift)){
 	my_velocty = 2;
 	image_speed = 1.5;

@@ -12,17 +12,36 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"d9bf111d-28ae-4f0c-8949-f256bd3db1a5","name":"d9bf111d-28ae-4f0c-8949-f256bd3db1a5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"37b68e23-a809-4dad-9542-10fe44ed66d4","name":"37b68e23-a809-4dad-9542-10fe44ed66d4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":64,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"7df4daa0-0b52-473c-901d-2452a2245af1","blendMode":0,"displayName":"default","isLocked":false,"name":"7df4daa0-0b52-473c-901d-2452a2245af1","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"8eeb253f-ca68-4d68-8165-0905e2e79b9e","blendMode":0,"displayName":"default","isLocked":false,"name":"8eeb253f-ca68-4d68-8165-0905e2e79b9e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"bedhouse",
-  "nineSlice":null,
+  "nineSlice":{
+    "$GMNineSliceData":"",
+    "bottom":22,
+    "enabled":true,
+    "guideColour":[4294902015,4294902015,4294902015,4294902015,],
+    "highlightColour":1728023040,
+    "highlightStyle":1,
+    "left":13,
+    "resourceType":"GMNineSliceData",
+    "resourceVersion":"2.0",
+    "right":11,
+    "tileMode":[
+      0,
+      0,
+      0,
+      0,
+      1,
+    ],
+    "top":36,
+  },
   "origin":0,
   "parent":{
     "name":"house",
@@ -69,8 +88,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d9bf111d-28ae-4f0c-8949-f256bd3db1a5","path":"sprites/bedhouse/bedhouse.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b07284b1-c74d-4b4d-8dfa-d92df71242e4","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"37b68e23-a809-4dad-9542-10fe44ed66d4","path":"sprites/bedhouse/bedhouse.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"35c823e9-e039-4dc5-92af-0ed505b514f1","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

@@ -4,7 +4,7 @@
   "bboxMode":0,
   "bbox_bottom":63,
   "bbox_left":32,
-  "bbox_right":63,
+  "bbox_right":191,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -14,8 +14,8 @@
   "frames":[
     {"$GMSpriteFrame":"v1","%Name":"ec98243e-82c3-4a03-b6d0-f01b94634bea","name":"ec98243e-82c3-4a03-b6d0-f01b94634bea","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
-  "gridX":0,
-  "gridY":0,
+  "gridX":32,
+  "gridY":64,
   "height":64,
   "HTile":false,
   "layers":[
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":64,
+  "width":192,
 }
