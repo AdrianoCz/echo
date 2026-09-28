@@ -91,21 +91,24 @@ if (keyboard_check_pressed(ord("E"))) {
 		currently_talking = npc_colliding;
 		current_npc_name = npc_colliding.character_name;
 		current_npc_id = npc_colliding.character_id;
+		
 	} else if (currently_talking != noone){
 		if(current_text[current_text_line][0] == "text"){
-		if (current_text_index <= string_length(current_text[current_text_line][1])) {
-		current_text_index = string_length(current_text[current_text_line][1]) 
 
-		} else if (current_text_line + 1 != array_length(current_text)){
-			current_text_line++;
-		} else if (current_text_index != string_length(current_text[current_text_line]) && current_text_line + 1 == array_length(current_text) ){
-		npc_colliding.has_interacted = true;
-		array_push(decision_manager.has_interacted_list, current_npc_id)
-		if(currently_talking.on_interaction_effect != "nofunc"){
+			
+			if (current_text_index <= string_length(current_text[current_text_line][1])) {
+				current_text_index = string_length(current_text[current_text_line][1]) 
+				current_portrait = npc_colliding.portrait;
+			} else if (current_text_line + 1 != array_length(current_text)){
+				current_text_line++;
+			} else if (current_text_index != string_length(current_text[current_text_line]) && current_text_line + 1 == array_length(current_text) ){
+				npc_colliding.has_interacted = true;
+				array_push(decision_manager.has_interacted_list, current_npc_id)
+			if(currently_talking.on_interaction_effect != "nofunc"){
 			currently_talking.on_interaction_effect();
 			currently_talking.has_applied_effect = true;
 			array_push(decision_manager.applied_effect_list, current_npc_id);
-		}		
+		} 
 		currently_talking = noone;
 		current_text = "";
 		current_text_line = 0;
@@ -113,6 +116,7 @@ if (keyboard_check_pressed(ord("E"))) {
 		current_npc_name = "";
 		}
 	} else if(current_text[current_text_line][0] == "choice"){
+
 			array_push(decision_manager.lasting_choices,[current_npc_id,current_text[current_text_line][1] ,current_choice ])
 			current_choice = 0;
 			if (current_text_line + 1 != array_length(current_text)){
@@ -124,7 +128,7 @@ if (keyboard_check_pressed(ord("E"))) {
 				currently_talking.on_interaction_effect();
 				currently_talking.has_applied_effect = true;
 				array_push(decision_manager.applied_effect_list, current_npc_id);
-			}
+			} 
 			currently_talking = noone;
 			current_text = "";
 			current_text_line = 0;
@@ -133,6 +137,28 @@ if (keyboard_check_pressed(ord("E"))) {
 			current_choice = 0;
 			
 			}
+		} else if(current_text[current_text_line][0] == "text_amelie"){
+
+			if (current_text_index <= string_length(current_text[current_text_line][1])) {
+				current_text_index = string_length(current_text[current_text_line][1]) 
+				current_portrait = npc_colliding.portrait;
+			} else if (current_text_line + 1 != array_length(current_text)){
+				current_text_line++;
+			} else if (current_text_index != string_length(current_text[current_text_line]) && current_text_line + 1 == array_length(current_text) ){
+				npc_colliding.has_interacted = true;
+				array_push(decision_manager.has_interacted_list, current_npc_id)
+				if(currently_talking.on_interaction_effect != "nofunc"){
+				currently_talking.on_interaction_effect();
+				currently_talking.has_applied_effect = true;
+				array_push(decision_manager.applied_effect_list, current_npc_id);
+				} 
+		currently_talking = noone;
+		current_text = "";
+		current_text_line = 0;
+		current_portrait = noone;
+		current_npc_name = "";
+		}
+		
 		}
 	}
 	}

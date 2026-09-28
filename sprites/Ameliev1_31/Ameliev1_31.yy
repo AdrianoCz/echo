@@ -23,7 +23,7 @@
   ],
   "name":"Ameliev1_31",
   "nineSlice":null,
-  "origin":0,
+  "origin":6,
   "parent":{
     "name":"player",
     "path":"folders/sprites/player.yy",
@@ -76,7 +76,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":0,
-    "yorigin":0,
+    "yorigin":96,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

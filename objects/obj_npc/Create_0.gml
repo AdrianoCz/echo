@@ -28,3 +28,5 @@ function check_has_applied_effect(_player_id){
 	
 	}
 }
+o_character_name = character_name;
+o_portrait = portrait;

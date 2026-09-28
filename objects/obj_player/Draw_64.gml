@@ -34,7 +34,7 @@ if (currently_talking != noone){
 	draw_text( text_x, text_y-32, current_npc_name);
 	
 	draw_set_font(font_regular_interaction);
-	if(current_text[current_text_line][0] == "text"){
+	if(current_text[current_text_line][0] == "text" || current_text[current_text_line][0] == "text_amelie"){
 	draw_text_ext(text_x, text_y, string_copy(current_text[current_text_line][1],1, current_text_index),16,726);
 	
 	if(current_text_index <= string_length(current_text[current_text_line][1])){current_text_index++};
