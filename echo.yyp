@@ -64,6 +64,7 @@
     {"id":{"name":"room_second","path":"rooms/room_second/room_second.yy",},},
     {"id":{"name":"room_start","path":"rooms/room_start/room_start.yy",},},
     {"id":{"name":"scr_change_sanity","path":"scripts/scr_change_sanity/scr_change_sanity.yy",},},
+    {"id":{"name":"scr_cleanse","path":"scripts/scr_cleanse/scr_cleanse.yy",},},
     {"id":{"name":"scr_get_interaction_result","path":"scripts/scr_get_interaction_result/scr_get_interaction_result.yy",},},
     {"id":{"name":"scr_load_game","path":"scripts/scr_load_game/scr_load_game.yy",},},
     {"id":{"name":"scr_save_game","path":"scripts/scr_save_game/scr_save_game.yy",},},

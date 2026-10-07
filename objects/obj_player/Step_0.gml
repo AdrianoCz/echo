@@ -107,11 +107,7 @@ if (keyboard_check_pressed(ord("E"))) {
 			currently_talking.has_applied_effect = true;
 			array_push(decision_manager.applied_effect_list, current_npc_id);
 		} 
-		currently_talking = noone;
-		current_text = "";
-		current_text_line = 0;
-		current_portrait = noone;
-		current_npc_name = "";
+			cleanse(self)
 		}
 	} else if(current_text[current_text_line][0] == "choice"){
 
@@ -127,19 +123,13 @@ if (keyboard_check_pressed(ord("E"))) {
 				currently_talking.has_applied_effect = true;
 				array_push(decision_manager.applied_effect_list, current_npc_id);
 			} 
-			currently_talking = noone;
-			current_text = "";
-			current_text_line = 0;
-			current_portrait = noone;
-			current_npc_name = "";
-			current_choice = 0;
+			cleanse(self)
 			
 			}
 		} else if(current_text[current_text_line][0] == "text_amelie"){
 
 			if (current_text_index <= string_length(current_text[current_text_line][1])) {
 				current_text_index = string_length(current_text[current_text_line][1]) 
-				current_portrait = npc_colliding.portrait;
 			} else if (current_text_line + 1 != array_length(current_text)){
 				current_text_line++;
 			} else if (current_text_index != string_length(current_text[current_text_line]) && current_text_line + 1 == array_length(current_text) ){
@@ -150,11 +140,7 @@ if (keyboard_check_pressed(ord("E"))) {
 				currently_talking.has_applied_effect = true;
 				array_push(decision_manager.applied_effect_list, current_npc_id);
 				} 
-		currently_talking = noone;
-		current_text = "";
-		current_text_line = 0;
-		current_portrait = noone;
-		current_npc_name = "";
+			cleanse(self)
 		}
 		
 		}
