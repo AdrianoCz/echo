@@ -1,4 +1,5 @@
 function save_game(index){
+	save_notification_show();
     var buffer = buffer_create(1024, buffer_grow, 1);
     
 	var _de_mg_save = {
