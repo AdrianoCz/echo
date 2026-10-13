@@ -1,4 +1,3 @@
-i = 180;
 on_left_click = function a() {
-	alarm[0] = 180/12;		
+	alarm[0] = 2;		
 	}
