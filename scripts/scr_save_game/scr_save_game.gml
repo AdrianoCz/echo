@@ -6,7 +6,9 @@ function save_game(index){
 		choices: decision_manager.lasting_choices,
 		interacted: decision_manager.has_interacted_list,
 		applied_effect: decision_manager.applied_effect_list,
-		curr_sanity: decision_manager.sanity
+		curr_sanity: decision_manager.sanity,
+		curr_room: room,
+		target_entrance: {x: obj_player.x, y: obj_player.y}
 	}
 	
     buffer_write(buffer, buffer_string, json_stringify(_de_mg_save));

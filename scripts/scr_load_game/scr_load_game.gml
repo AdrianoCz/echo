@@ -15,6 +15,8 @@ function load_game(index){
         decision_manager.has_interacted_list = things.interacted
 		decision_manager.applied_effect_list = things.applied_effect
 		decision_manager.sanity = things.curr_sanity
+		decision_manager.curr_room = things.curr_room;
+		decision_manager.target_entrance = things.target_entrance
 		
         buffer_delete(buffer);
     }); 	

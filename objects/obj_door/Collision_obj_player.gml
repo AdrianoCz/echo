@@ -1,2 +1,2 @@
 visible = false
-timer = 60
+timer = 25
