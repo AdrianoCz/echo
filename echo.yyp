@@ -82,6 +82,7 @@
     {"id":{"name":"save_notification","path":"objects/save_notification/save_notification.yy",},},
     {"id":{"name":"sumonador_3000_de_minigames","path":"objects/sumonador_3000_de_minigames/sumonador_3000_de_minigames.yy",},},
     {"id":{"name":"main_menu","path":"rooms/main_menu/main_menu.yy",},},
+    {"id":{"name":"room_base","path":"rooms/room_base/room_base.yy",},},
     {"id":{"name":"room_second","path":"rooms/room_second/room_second.yy",},},
     {"id":{"name":"room_start","path":"rooms/room_start/room_start.yy",},},
     {"id":{"name":"room_third","path":"rooms/room_third/room_third.yy",},},
@@ -201,6 +202,7 @@
     {"roomId":{"name":"room_start","path":"rooms/room_start/room_start.yy",},},
     {"roomId":{"name":"room_second","path":"rooms/room_second/room_second.yy",},},
     {"roomId":{"name":"room_third","path":"rooms/room_third/room_third.yy",},},
+    {"roomId":{"name":"room_base","path":"rooms/room_base/room_base.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
