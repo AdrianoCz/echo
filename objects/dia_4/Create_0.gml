@@ -7,32 +7,36 @@ if (instance_number(object_index) > 1) {
 // --- DISPLAY CONFIGURATION ---
 display_set_gui_size(1366, 768);
 
-// --- WAVE PARAMETERS (Amplitude Match Only) ---
-target_amp = irandom_range(50, 130); // Random target amplitude per round
-player_amp = 30;                     // Initial player amplitude
+// --- WAVE PARAMETERS (Amplitude + Drifting Frequency) ---
+target_amp  = irandom_range(55, 130);       // Random target amplitude
+target_freq = random_range(0.035, 0.085);   // Random target frequency
 
-// Fixed frequency and phase so waves align horizontally
-wave_freq = 0.05;
-wave_phase = 0;
+player_amp  = 30;
+player_freq = 0.02;
+wave_phase  = 0;
 
-// Wave Position on Screen (Centered for 1366x768)
 wave_center_x = 200;
-wave_center_y = 384;   // 768 / 2
-wave_length = 966;     // 1366 - 400 margins
-wave_speed = 0.05;     // Oscillation over time
+wave_center_y = 384;   
+wave_length   = 966;   
+wave_speed    = 0.05;
 
-// --- GAME LOGIC & TIMERS ---
-time_limit = 5.0;      // 5 seconds total gameplay time
-time_left = time_limit;
+
+time_limit   = 8.0;  
+time_left    = time_limit;
 
 sync_accuracy = 0;
-is_completed = false;
-is_failed = false;
+freq_clarity  = 0;    
+is_completed  = false;
+is_failed     = false;
 
-result_timer = 3.0;    // 3-second delay after getting the result before destroying itself
+result_timer  = 3.0;   
 
-// Time counter for wave animation
+
 t = 0;
+drift_timer = 0;
+drift_dir = choose(-1, 1);
 
-// Adjustment Speed
-amp_speed = 2.5;
+
+amp_speed        = 2.5;
+freq_speed       = 0.0008;
+freq_drift_speed = 0.00028; 

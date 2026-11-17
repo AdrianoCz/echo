@@ -19,6 +19,7 @@
     {"name":"inst_A08EC16","path":"rooms/room_second/room_second.yy",},
     {"name":"inst_75437592","path":"rooms/room_second/room_second.yy",},
     {"name":"inst_26346B1F","path":"rooms/room_second/room_second.yy",},
+    {"name":"apague","path":"rooms/room_second/room_second.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -33,7 +34,8 @@
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.75,"x":368.0,"y":132.0,},
         {"$GMRInstance":"v4","%Name":"inst_A08EC16","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_A08EC16","objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":-90.0,"scaleX":2.75,"scaleY":15.75,"x":420.0,"y":24.0,},
         {"$GMRInstance":"v4","%Name":"inst_75437592","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_75437592","objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":-90.0,"scaleX":1.0,"scaleY":3.5,"x":168.0,"y":28.000002,},
-        {"$GMRInstance":"v4","%Name":"inst_26346B1F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_26346B1F","objectId":{"name":"obj_collide_event","path":"objects/obj_collide_event/obj_collide_event.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":132.0,"y":45.0,},
+        {"$GMRInstance":"v4","%Name":"inst_26346B1F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_26346B1F","objectId":{"name":"obj_collide_event","path":"objects/obj_collide_event/obj_collide_event.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":132.0,"y":40.0,},
+        {"$GMRInstance":"v4","%Name":"apague","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"apague","objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":-90.0,"scaleX":1.0,"scaleY":3.5,"x":168.0,"y":52.0,},
       ],"layers":[],"name":"Collision","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"front_assets","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_20DBBB7","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_20DBBB7","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":31.5,"spriteId":{"name":"waltop2","path":"sprites/waltop2/waltop2.yy",},"x":60.0,"y":34.0,},
