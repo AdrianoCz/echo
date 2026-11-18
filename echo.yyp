@@ -11,6 +11,7 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"fonts","folderPath":"folders/fonts.yy","name":"fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"sounds","folderPath":"folders/sounds.yy","name":"sounds","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"objects","folderPath":"folders/objects.yy","name":"objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"collision","folderPath":"folders/objects/collision.yy","name":"collision","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"corredor","folderPath":"folders/objects/corredor.yy","name":"corredor","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -92,6 +93,7 @@
     {"id":{"name":"scr_load_game","path":"scripts/scr_load_game/scr_load_game.yy",},},
     {"id":{"name":"scr_save_game","path":"scripts/scr_save_game/scr_save_game.yy",},},
     {"id":{"name":"scr_save_notification","path":"scripts/scr_save_notification/scr_save_notification.yy",},},
+    {"id":{"name":"snd_passo","path":"sounds/snd_passo/snd_passo.yy",},},
     {"id":{"name":"Ameliev1_31","path":"sprites/Ameliev1_31/Ameliev1_31.yy",},},
     {"id":{"name":"armariohouse1","path":"sprites/armariohouse1/armariohouse1.yy",},},
     {"id":{"name":"armarioquarto","path":"sprites/armarioquarto/armarioquarto.yy",},},

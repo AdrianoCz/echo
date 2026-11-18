@@ -10,6 +10,10 @@ down_input = keyboard_check(ord("S"));
 var hinput = right_input - left_input;
 var vinput = down_input - up_input;
 
+if(hinput != 0 || vinput != 0){
+	audio_play_sound(snd_passo, 1, false)
+} else()
+
 function get_character_choice_index(_value, _index){
 	return(_value[0] == current_npc_name)
 }

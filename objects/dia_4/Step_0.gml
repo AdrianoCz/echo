@@ -1,8 +1,11 @@
 // --- POST-RESULT DESTRUCTION TIMER ---
+obj_player.is_paused = true;
 if (is_completed || is_failed) {
     result_timer -= 1 / room_speed;
+
     if (result_timer <= 0) {
         instance_destroy();
+	obj_player.is_paused = false;
     }
     exit;
 }
@@ -13,6 +16,7 @@ if (time_left <= 0) {
     time_left = 0;
     is_failed = true;
     show_debug_message("MINIGAME FAILED: TIME OUT");
+	change_sanity(-25);
     exit;
 }
 
@@ -63,5 +67,6 @@ if (amp_diff <= 8 && freq_diff <= 0.0035) {
     freq_clarity = 1;
     sync_accuracy = 100;
     is_completed = true;
+	
     show_debug_message("MINIGAME CLEARED!");
 }
