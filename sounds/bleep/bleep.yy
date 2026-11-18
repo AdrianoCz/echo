@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"bleep",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":1,
+  "compressionQuality":10,
+  "conversionMode":0,
+  "duration":1.5449927,
+  "exportDir":"",
+  "name":"bleep",
+  "parent":{
+    "name":"sounds",
+    "path":"folders/sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":5512,
+  "soundFile":"bleep.wav",
+  "volume":1.0,
+}

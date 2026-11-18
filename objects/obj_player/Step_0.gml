@@ -10,9 +10,6 @@ down_input = keyboard_check(ord("S"));
 var hinput = right_input - left_input;
 var vinput = down_input - up_input;
 
-if(hinput != 0 || vinput != 0){
-	audio_play_sound(snd_passo, 1, false)
-} else()
 
 function get_character_choice_index(_value, _index){
 	return(_value[0] == current_npc_name)
@@ -27,6 +24,8 @@ if (keyboard_check(vk_shift)){
 	image_speed = 0.85;
 }
 
+
+
 if(currently_talking == noone && !is_paused){
 if(up_input){
 	facing_direction = 1
@@ -37,7 +36,12 @@ if(up_input){
 } else if(left_input) {
 	facing_direction = 3
 }
-
+if(hinput != 0|| vinput != 0){
+	if (!audio_is_playing(snd_passo)){
+	audio_play_sound(snd_passo, 1, true)}
+} else {
+	audio_stop_sound(snd_passo)
+}
 
 if (vinput == 0 && hinput == 0){
 	switch (facing_direction){
@@ -95,7 +99,8 @@ if (keyboard_check_pressed(ord("E"))) {
 		currently_talking = npc_colliding;
 		current_npc_name = npc_colliding.character_name;
 		current_npc_id = npc_colliding.character_id;
-		
+		sprite_index = spr_idle_up;
+		audio_stop_sound(snd_passo)
 	} else if (currently_talking != noone){
 		if(current_text[current_text_line][0] == "text"){
 			if (current_text_index <= string_length(current_text[current_text_line][1])) {

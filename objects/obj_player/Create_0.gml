@@ -9,3 +9,9 @@ current_npc_name = "";
 last_text_line = 0;
 current_choice = 0;
 lasting_choices = [];
+
+my_echo = audio_effect_create(AudioEffectType.Delay, {
+    time: 0.25,    
+    feedback: 0.5,  
+    mix: 0.4        
+});

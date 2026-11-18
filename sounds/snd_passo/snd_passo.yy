@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":4.643991,
+  "duration":0.9545351,
   "exportDir":"",
   "name":"snd_passo",
   "parent":{

@@ -37,7 +37,9 @@ if (currently_talking != noone){
 	if(current_text[current_text_line][0] == "text" || current_text[current_text_line][0] == "text_amelie"){
 	draw_text_ext(text_x, text_y, string_copy(current_text[current_text_line][1],1, current_text_index),16,726);
 	
-	if(current_text_index <= string_length(current_text[current_text_line][1])){current_text_index++};
+	if(current_text_index <= string_length(current_text[current_text_line][1])){current_text_index += 0.33;
+				if (!audio_is_playing(bleep003)){
+	audio_play_sound(bleep003, 1, false)}};
 	}
 	if(current_text[current_text_line][0] == "choice"){
 	

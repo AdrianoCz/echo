@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"elevator_button_press",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.0554195,
+  "exportDir":"",
+  "name":"elevator_button_press",
+  "parent":{
+    "name":"sounds",
+    "path":"folders/sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"elevator_button_press.wav",
+  "volume":1.0,
+}
