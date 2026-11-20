@@ -1,0 +1,1 @@
+minigame = obj_mng_d2

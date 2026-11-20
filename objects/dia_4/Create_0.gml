@@ -6,7 +6,7 @@ if (instance_number(object_index) > 1) {
 
 // --- DISPLAY CONFIGURATION ---
 display_set_gui_size(1366, 768);
-
+audio_stop_sound(snd_passo)
 // --- WAVE PARAMETERS (Amplitude + Drifting Frequency) ---
 target_amp  = irandom_range(55, 130);       // Random target amplitude
 target_freq = random_range(0.035, 0.085);   // Random target frequency
